@@ -1,8 +1,11 @@
 #include <string>
+#include "items.hpp"
 using namespace std;
 
 class Tasks
 {
     private:
-        string name;
+        string name, required_equipment, location_reward;
+        int time, attribute_reward;
+        Items item_reward;
 };

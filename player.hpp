@@ -6,14 +6,9 @@ using namespace std;
 class Player
 {
     private:
-        string name;
-        int day;
-        int energy;
-        int money;
-        int friendship_points;
-        int joja_influence;
+        string name, bundle, location_register[7];
+        int day, energy, money, time, score;
+        int friendship_points, joja_influence;
         Location location;
         Items inventory;
-        string bundle;
-        int score;
 };
