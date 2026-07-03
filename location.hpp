@@ -11,4 +11,14 @@ class Location
         vector<Tasks> tasks;
         vector<NPCs> npcs;
         int trash;
+    public:
+        void setName(string n)
+        {
+            name = n;
+        }
+
+        string getName()
+        {
+            return name;
+        }
 };

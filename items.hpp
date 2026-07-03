@@ -4,9 +4,16 @@ using namespace std;
 class Items
 {
     private:
-        string name;
-        string type;
-        string rarity;
+        string name, type, rarity, equipment_type;
         int attributes[5];
-        string equipment_type;
+    public:
+        void setName(string n)
+        {
+            name = n;
+        }
+
+        string getName()
+        {
+            return name;
+        }
 };

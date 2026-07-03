@@ -2,6 +2,7 @@
 
 The objective of the game is to fill the Bundle before time runs out. The player has x days to add x specific items to the bundle, where the game ends when the bundle is complete, or the player runs out of time. In order to obtain the items for the bundle, as well as items for the rest of the game, the player can ...
 
+
 -- The Player --
 
 - Attributes -
@@ -36,6 +37,8 @@ The objective of the game is to fill the Bundle before time runs out. The player
     - Score - All of the above attributes will contribute to your score. Things you do around the village will also contribute to your score. The
               secondary goal of the game is to get the highest score possible. Your final score at the end of the game will give you a unique 
               ending dialogue, and will contribute to your award at the end of the game. Certain consumables will contribute to your score.
+    - Unlocked Locations - This is a register to determine what locations the player has unlocked. 
+
 
 -- Location --
 
@@ -52,6 +55,7 @@ The objective of the game is to fill the Bundle before time runs out. The player
     - Trash Amount - each location will have a certain amount of trash. A task for you to complete is to collect trash in a location. Doing this will
                      give you benefits in the form of items or attributes from an NPC nearby.  
 
+
 --- Tasks ---
 
 - Attributes -
@@ -61,7 +65,13 @@ The objective of the game is to fill the Bundle before time runs out. The player
                        in their inventory, then the task will not be complete and energy will NOT be spent. However, doing a task successfully will 
                        cost energy and time. 
     - Time - Every task takes an amount of time to complete. 
+    - Reward (Item) - After completing a task, you will recieve some form of reward (either positive or negative). One form of reward can be an item,
+                      such as food or a piece of equipment.
+    - Reward (Attribute) - Another form of reward is an increase (or decrease) in an attribute, however, this is much more limited, and will usually
+                           only be an increase in money, friendship points or joja influence.
+    - Reward (Location) - A form of reward from a task can be the unlocking a location! 
     
+
 --- Items ---
     
 - Attributes -
