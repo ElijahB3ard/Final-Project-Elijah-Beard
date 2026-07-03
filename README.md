@@ -26,6 +26,7 @@ The objective of the game is to fill the Bundle before time runs out. The player
                        item you buy, your influence will increase by x depending on the money you spend on the item. Your Joja influence will directly
                        effect your friendship points negatively, and if you give enough money to Jojamart (an amount the player will not be told),
                        you can unlock two unique endings. You can decrease your joja influence by speaking with certain NPCs, or by consuming an item.
+                       The higher your joja influence, the less the joja mart will charge you for items from the store. 
     - Location - The actions that a player can take are entirely dependant on the location of the player. It will cost x amount of energy to travel
                  between locations of the game.
     - Inventory - The player can hold up to x items at a time. Some of these items are resources for building the bundle, some are food items to

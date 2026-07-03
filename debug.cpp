@@ -29,9 +29,6 @@ int main()
 // Create farm
     farm.setName("Farm");
 
-    cout << "Welcome to Stardew Valley!!!!!" << endl;
-    cout << endl;
-
 // Choose a character
     cout << "Enter your name: ";
         cin >> name;
@@ -55,7 +52,7 @@ int main()
     location_register = player.getLocationRegister();
     for (int i = 0; i < static_cast<int>(player.getLocationRegister().size()); i++)
     {
-        cout << location_register[i] << ", ";
+        cout << location_register[i] << " ";
     }
     cout << endl;
 
