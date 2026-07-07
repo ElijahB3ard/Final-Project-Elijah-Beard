@@ -124,7 +124,7 @@ Player choosePlayerOrigins(int i, vector<Items> item_repository, string name, Lo
     vector<int> starting_friendship;
     vector<int> starting_joja;
     vector<Items> starting_item;
-    vector<string> location_list = {"Farm", "Town", "Community Center", "Beach", "JojaMart", "Mine", "Forest", "City Hall", "Joja Headquarters"};
+    vector<string> location_list = {"Farm", "Town", "Community Center", "Beach", "JojaMart", "Mine", "Forest", "Town Hall", "Joja Headquarters"};
     vector<string> actual_location_list;
     int index = i - 1;
 
@@ -133,28 +133,28 @@ Player choosePlayerOrigins(int i, vector<Items> item_repository, string name, Lo
     money_options.push_back(100);
     starting_friendship.push_back(5);
     starting_joja.push_back(0);
-    starting_item.push_back(item_repository[0]);
+    starting_item.push_back(item_repository[24]);
 
     // Character 2 - The Lumberjack
     energy_options.push_back(12);
     money_options.push_back(75);
     starting_friendship.push_back(5);
     starting_joja.push_back(0);
-    starting_item.push_back(item_repository[1]);
+    starting_item.push_back(item_repository[27]);
 
     // Character 3 - The Village Friend
     energy_options.push_back(14);
     money_options.push_back(50);
     starting_friendship.push_back(8);
     starting_joja.push_back(0);
-    starting_item.push_back(item_repository[2]);
+    starting_item.push_back(item_repository[0]);
 
-    // Character 4 - The Joja Infultrator
+    // Character 4 - The Joja Embassator
     energy_options.push_back(10);
     money_options.push_back(75);
     starting_friendship.push_back(friendshipCalculator(4, 0));
     starting_joja.push_back(4);
-    starting_item.push_back(item_repository[3]);
+    starting_item.push_back(item_repository[0]);
 
     // Set character
     for (int i = 0; i < 5; i++)
@@ -165,7 +165,7 @@ Player choosePlayerOrigins(int i, vector<Items> item_repository, string name, Lo
     player.setDay(1);
     player.setEnergy(energy_options[index]);
     player.setFriendship(starting_friendship[index]);
-    item.push_back(item_repository[index]);
+    item.push_back(starting_item[index]);
     player.setInventory(item);
     player.setJojaInfluence(starting_joja[index]);
     player.setLocation(location);

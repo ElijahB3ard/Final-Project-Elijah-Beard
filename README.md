@@ -91,6 +91,18 @@ The objective of the game is to fill the Bundle before time runs out. The player
                        The equipment types are: fishing pole, pickaxe, axe, hoe and trashbag. 
 
 
+--- NPCs ---
+
+- Attributes -
+
+    - Name - Each npc has a unique name which will be displayed to the player in the map as well as in the menu
+    - Dialogue - The dialogue can vary depending on the players friendship points. Each bit of dialogue can give a hint,
+                 a task or an item, or a different ending.
+    - Task - Each NPC can give a regular task just like the locational tasks which give rewards. For the sake of
+             simplicity, the only way to claim a reward is by revisiting the NPC that gave you the task
+    - Friendship Points - Each bit of dialogue can change your friendship points depending on how nice you are
+
+
 --- The Bundle ---
 
 - Food Reserve
@@ -103,3 +115,84 @@ The objective of the game is to fill the Bundle before time runs out. The player
 - Material Reserve
     - [5] Wood
     - [5] Stone
+
+-========== Initializers ==========-
+
+--- Initializing The Map And Game Setting ---
+
+- Locations that will be used: - 
+    - Unlocked:
+        - Farm
+        - Town
+        - Community Center
+        - Beach
+        - JojaMart
+    - Locked:
+        - Mine
+        - Forest
+        - Town Hall
+        - Joja Headquarters
+
+--- The Farm: 1 ---
+    - Name: The Farm
+    - Tasks:
+        - Farm Crops
+            - Till Soil
+            - Plant Seeds
+            - Harvest
+        - Rest
+    - NPCs:
+        - Dog
+    - Trash amount: 0 trash
+
+    - Tasks: Deignated int *Farm Identity*Task Identity*Item Identity* -
+        - Farm Crops:
+            - Till Soil 1100:
+                - Required Items - Hoe
+                - Time - x
+                - Reward (item) - NONE
+                - Reward (attribute) - NONE
+                - Reward (location) - NONE
+            - Plant Seeds 1200:
+                - Required Items - seed
+                - Time - x
+                - Reward (item) - NONE
+                - Reward (attribute) - NONE
+                - Reward (location) - NONE
+            - Harvest 1301:
+                - Required Items - NONE
+                - Time - x
+                - Reward (item) - Wheat
+                - Reward (attribute) - NONE
+                - Reward (location) - NONE
+            - Harvest 1302:
+                - Required Items - NONE
+                - Time - x
+                - Reward (item) - Melon
+                - Reward (attribute) - NONE
+                - Reward (location) - NONE
+            - Harvest 1303:
+                - Required Items - NONE
+                - Time - x
+                - Reward (item) - Corn
+                - Reward (attribute) - NONE
+                - Reward (location) - NONE
+        - Rest 1400:
+            - Required Items - NONE
+            - Time - x
+            - Reward (item) - NONE
+            - Reward (attribute) - (+energy)
+            - Reward (location) - NONE
+
+    - NPCs: Deignated int *Farm Identity*NPC Identity*- 
+        - Dog 11:
+            - Dialogue:
+                (FSP > 2): "Ruff Ruff!"
+                           "Woof Woof!"
+                           "Woof!"
+                           "*Wags tail violently*"
+                (FSP <= 2): "Grrrrrr"
+                            "Grrrrrrrrrrr"
+                            "*Whine*"
+            - Task - NONE
+            - Friendship Points Change - NONE
