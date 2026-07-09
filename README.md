@@ -1,199 +1,27 @@
-# Final-Project-Elijah-Beard
+# CSCI 1300 Final Project
 
-The objective of the game is to fill the Bundle before time runs out. The player has x days to add x specific items to the bundle, where the game ends when the bundle is complete, or the player runs out of time. In order to obtain the items for the bundle, as well as items for the rest of the game, the player can ...
+## Theme
+My game will be based on an old indie game called Pathologic! My entire idea is just to make very interesting an unsettling interractions, with weird item and location names. Its kind of built in a world that doesn't quite make sense, and im in love with the unsettling nature of it.
 
+## Goal
+The goal of the game is to gather the resources to synthesize a vaccine for a pandemic that is sweeping over the town. You do this by comlpeting tasks and such.
 
--- The Player --
+## How to compile and run
+g++ -Wall -Werror -Wpedantic -std=c++17 -g main.cpp -o play 
+./play
 
-- Attributes -
+## How to play
+You start at a set location, and you can only go to specific locations from the start. As you do tasks and activities, your time and energy will slowly run out. If your time runs out, you automatically move on to the next day. You have a set amount of days to complete your goal of synthesizing the vaccine. If you run out of energy, you will pass out, and wake up the next day with only half the energy you get from resting. You can rest at a specific location, and doing so will move on to the next day automatically and give you a set amount of energy. You comlpete location tasks using equipment, and you are rewarded with an item of some sort. You can complete NPC tasks in the same manner, however, you comleting the task will change your friendship points. Certain aspects in the game will determine your interractions with people, such as how much market influence you have. You can use items to change your attributes, like eating to increase energy, or consumibng a potion to change friendship points and such. The game ends when you run out of time, or when you synthesize the vaccine.
 
-    - Name - Your players unique name will be displayed throughout the game, showing up in dialogue and exposition
-    - Day - There are only a certain number of days in the game. Either the bundle is completed by the day limit, or the player loses the game.
-            There is a single item in the game that can extend the day limit by one, however, there only exists one of these items and it can only
-            be gifted to the player by an NPC. 
-    - Energy - Every action from the player costs an amount of energy. Energy is regained partially during sleep, or by consuming a food item 
-               or an energy potion. If the player runs out of energy for the day, they pass out, the day ends, and they wake up at the farm with
-               half the energy they get from sleeping.
-    - Money - In order to purchase certian items, or to unlock certain areas, you need to spend gold with NPCs or at stores. You can sell items to 
-              get more gold, or you can recieve gold from NPCs for completing quests. 
-    - Time - Every action in the game will cost a certain amount of time to complete. Each day only has a specific amount of time in it. Once the time runs
-             to zero, a new day will begin, and the player will remain where they are with what they are doing. 
-    - Friendship Points - Every NPC in the game will have three versions of dialogue. Each version of dialogue will allow for different actions such
-                          as receiving gifts or quests or different endings. The version of dialogue that is displayed will depend entirely on the 
-                          number of friendship points the player has. The player can increase this by completing tasks for the NPCs, or for being nice
-                          to them. You can also increase your friendship points with a consumable item.
-    - Joja Influence - The Jojamart is trying to create a monopoly on items in the village. The items there are tempting to buy, however, with every
-                       item you buy, your influence will increase by x depending on the money you spend on the item. Your Joja influence will directly
-                       effect your friendship points negatively, and if you give enough money to Jojamart (an amount the player will not be told),
-                       you can unlock two unique endings. You can decrease your joja influence by speaking with certain NPCs, or by consuming an item.
-                       The higher your joja influence, the less the joja mart will charge you for items from the store. 
-    - Location - The actions that a player can take are entirely dependant on the location of the player. It will cost x amount of energy to travel
-                 between locations of the game.
-    - Inventory - The player can hold up to x items at a time. Some of these items are resources for building the bundle, some are food items to
-                  regain energy, some are equipment items that allow the player to mine or fish or chop wood ect, some are things like seeds that
-                  the player will need to complete the game. Managing your inventory will be key to success.
-    - Bundle Progress - The items you need for the bundle can be observed and displayed at any time during the game, however, you cannot contribute
-                        to the bundle at every location in the game. Completed items, as well as items that are not yet complete will be listed
-                        in this statistic.
-    - Score - All of the above attributes will contribute to your score. Things you do around the village will also contribute to your score. The
-              secondary goal of the game is to get the highest score possible. Your final score at the end of the game will give you a unique 
-              ending dialogue, and will contribute to your award at the end of the game. Certain consumables will contribute to your score.
-    - Unlocked Locations - This is a register to determine what locations the player has unlocked. 
+## Classes
+### Item
+This class holds the information about a specific item in the game. An item can have a name, a cost (for if you buy it at a store), a reward you get for consuming or using the item, and the attribute that gets affected when you do use the item. To make task setting easier, each item also has a type. The type of item affects which activities and tasks you can do.
+### Equipment
+Inherited from the Item class, however, each bit of equipment needs a designator like 'pickaxe' or 'axe' to further restrict which tasks can be completed
+### Task
+Each task in the game has a description, telling you what you need to do, and a reward that you recieve for when you complete the task. The task has a required item that must be aquired in order for the reward to be given, and the task has to be started before a reward can be given or an item accepted.
+### NPCTask
+Inherited from the Task class, however with an extra friendship change variable. Depending on the task i.e. its contents or who you do it with, your friendship points can go down or up. I will be changing friendship points to reputation later on, and thinking of that variable as a reputation is much easier then as a freindship point.
 
-
--- Location --
-
-- Attributes -
-
-    - Name - Each location has a unique name that will be displayed on the map and mentioned in NPC dialogue
-    - Tasks - Every location has a set of unique tasks that are parrallel to the purpose of the location. The mine will have an option to go mining,
-              the community center will have an option to contribute to the bundle. Some locations have multiple tasks. The Farm is the main location.
-              Here, you can sleep, grow crops and store items. Some locations will have the option to pick up trash. Doing this will increase your
-              score and friendship points. Doing tasks will give you items or change attributes for your character.
-    - NPCs - Most locations will have NPCs that you can talk to. The NPCs can either: just talk, give a quest, give an item, sell an item, buy an
-             item or give a hint. Interracting with an NPC will cost energy, and if you attempt to speak with one where the cost in energy is greater
-             than your current energy, you will pass out, and not be able to speak with the NPC. 
-    - Trash Amount - each location will have a certain amount of trash. A task for you to complete is to collect trash in a location. Doing this will
-                     give you benefits in the form of items or attributes from an NPC nearby.  
-
-
---- Tasks ---
-
-- Attributes -
-
-    - Description - Each task, rather than a name, has a designation. This could be in the form of "Collect Wood" or "Contribute to Bundle".
-    - Required Items - Each task has one or multiple required items in order to participate in the task. If the player does not have one of these Items
-                       in their inventory, then the task will not be complete and energy will NOT be spent. However, doing a task successfully will 
-                       cost energy and time. 
-    - Time - Every task takes an amount of time to complete. 
-    - Reward (Item) - After completing a task, you will recieve some form of reward (either positive or negative). One form of reward can be an item,
-                      such as food or a piece of equipment.
-    - Reward (Attribute) - Another form of reward is an increase (or decrease) in an attribute, however, this is much more limited, and will usually
-                           only be an increase in money, friendship points or joja influence.
-    - Reward (Location) - A form of reward from a task can be the unlocking a location! 
-    
-
---- Items ---
-    
-- Attributes -
-
-    - Name - Every item has a unique name which will be displayed to the player for identification.
-    - Type - Every item will be one of three types: materials, food, equipment. Each item type will have a different purpose and can be used in
-             different locations. Materials can only be deposited or sold. Food can only be consumed or sold. Equipment can only be used or sold.
-    - Rarity - Items are sometimes collected at random. This randomness is defined by the rarity of the item. These rarities are common, rare, 
-               precious. Each will have some physical representation for the character to know the rarity of the item. The more rare and item, the
-               better the stats will be for it. Materials can only be common, while food and equipment can be common, rare, and precious. 
-    - Attributes - Every item will have some form of attribute. However, since only the food will meaningfully contribute to the players stats, 
-                   all attributes for materials and equipment will be set to zero. The food type can increase (or decrease) energy, increase 
-                   (or decrease) the days remaining, increase (or decrease) your freindship points, increase (or decrease) your joja influence, 
-                   and/or increase (or decrease) your score. 
-    - Equipment Type - For the materials and food types, this will be set to a distinguisher. You can only use certain equipment in certain locations.
-                       The equipment types are: fishing pole, pickaxe, axe, hoe and trashbag. 
-
-
---- NPCs ---
-
-- Attributes -
-
-    - Name - Each npc has a unique name which will be displayed to the player in the map as well as in the menu
-    - Dialogue - The dialogue can vary depending on the players friendship points. Each bit of dialogue can give a hint,
-                 a task or an item, or a different ending.
-    - Task - Each NPC can give a regular task just like the locational tasks which give rewards. For the sake of
-             simplicity, the only way to claim a reward is by revisiting the NPC that gave you the task
-    - Friendship Points - Each bit of dialogue can change your friendship points depending on how nice you are
-
-
---- The Bundle ---
-
-- Food Reserve
-    - [3] Crop (Wheat, Melon, Corn)
-    - [3] Fish (Trout, Salmon, Oarfish, Trumpetfish, Marlin)
-    - [3] Animal Product (egg, milk, honey)
-- Mineral Reserve
-    - [5] Ore (Copper, Silver, Gold)
-    - [3] Crystal (Amethyst, Opal, Ruby, Saphire)
-- Material Reserve
-    - [5] Wood
-    - [5] Stone
-
--========== Initializers ==========-
-
---- Initializing The Map And Game Setting ---
-
-- Locations that will be used: - 
-    - Unlocked:
-        - Farm
-        - Town
-        - Community Center
-        - Beach
-        - JojaMart
-    - Locked:
-        - Mine
-        - Forest
-        - Town Hall
-        - Joja Headquarters
-
---- The Farm: 1 ---
-    - Name: The Farm
-    - Tasks:
-        - Farm Crops
-            - Till Soil
-            - Plant Seeds
-            - Harvest
-        - Rest
-    - NPCs:
-        - Dog
-    - Trash amount: 0 trash
-
-    - Tasks: Deignated int *Farm Identity*Task Identity*Item Identity* -
-        - Farm Crops:
-            - Till Soil 1100:
-                - Required Items - Hoe
-                - Time - x
-                - Reward (item) - NONE
-                - Reward (attribute) - NONE
-                - Reward (location) - NONE
-            - Plant Seeds 1200:
-                - Required Items - seed
-                - Time - x
-                - Reward (item) - NONE
-                - Reward (attribute) - NONE
-                - Reward (location) - NONE
-            - Harvest 1301:
-                - Required Items - NONE
-                - Time - x
-                - Reward (item) - Wheat
-                - Reward (attribute) - NONE
-                - Reward (location) - NONE
-            - Harvest 1302:
-                - Required Items - NONE
-                - Time - x
-                - Reward (item) - Melon
-                - Reward (attribute) - NONE
-                - Reward (location) - NONE
-            - Harvest 1303:
-                - Required Items - NONE
-                - Time - x
-                - Reward (item) - Corn
-                - Reward (attribute) - NONE
-                - Reward (location) - NONE
-        - Rest 1400:
-            - Required Items - NONE
-            - Time - x
-            - Reward (item) - NONE
-            - Reward (attribute) - (+energy)
-            - Reward (location) - NONE
-
-    - NPCs: Deignated int *Farm Identity*NPC Identity*- 
-        - Dog 11:
-            - Dialogue:
-                (FSP > 2): "Ruff Ruff!"
-                           "Woof Woof!"
-                           "Woof!"
-                           "*Wags tail violently*"
-                (FSP <= 2): "Grrrrrr"
-                            "Grrrrrrrrrrr"
-                            "*Whine*"
-                            "Hmph"
-            - Task - NONE
-            - Friendship Points Change - NONE
+## Extra credit
+I will try my best to make the game look pretty!!!!
