@@ -104,6 +104,23 @@ class Player
         {
             location_register = l;
         }
+
+    // Adders
+        void addItem(Items i)
+        {
+            inventory.push_back(i);
+        }
+        void removeItem(string item_name)
+        {
+            for (int i = 0; i < static_cast<int>(inventory.size()); i++)
+            {
+                if (inventory[i].getName() == item_name)
+                {
+                    inventory.erase(inventory.begin() + i);
+                }
+            }
+        }
+
 };
 
 int changeAttribute(int value, int factor)
@@ -115,7 +132,7 @@ int friendshipCalculator(int joja, int reward) // Incomplete
     return 5 - joja;
 }
 
-Player choosePlayerOrigins(int i, vector<Items> item_repository, string name, Location location)
+Player initializePlayer(int i, vector<Items> item_repository, string name, Location location)
 {
     Player player;
     vector<Items> item;
@@ -173,7 +190,7 @@ Player choosePlayerOrigins(int i, vector<Items> item_repository, string name, Lo
     player.setMoney(money_options[index]);
     player.setName(name);
     player.setScore(0);
-    player.setTime(0);
+    player.setTime(24);
 
     // Return starting player
     return player;

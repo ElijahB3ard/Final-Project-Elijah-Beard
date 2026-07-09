@@ -11,6 +11,7 @@ class Location
         vector<Tasks> tasks;
         vector<NPCs> npcs;
         int trash;
+        int location_progress;
     public:
     // Empty location
         Location()
@@ -22,6 +23,7 @@ class Location
             tasks.push_back(initializeTasks(0, empty_item));
             npcs.push_back(initializeNPCs(0, empty_task));
             trash = 0;
+            location_progress = 0;
         }
     // Setters
         void setName(string n)
@@ -39,6 +41,10 @@ class Location
         void setTrash(int t)
         {
             trash = t;
+        }
+        void setLocationProgress(int p)
+        {
+            location_progress = p;
         }
 
     // Getters - Not verrified
@@ -66,6 +72,10 @@ class Location
         {
             return static_cast<int>(npcs.size());
         }
+        int getLocationProgress()
+        {
+            return location_progress;
+        }
 };
 
 Location initializeLocation(int location_identity, vector<Tasks> task_repository, vector<NPCs> npc_repository)
@@ -84,6 +94,7 @@ Location initializeLocation(int location_identity, vector<Tasks> task_repository
             loc_alpha.setTask(task_repository[6]);
             loc_alpha.setNPC(npc_repository[1]);
             loc_alpha.setTrash(0);
+            loc_alpha.setLocationProgress(0);
     }
 
     return loc_alpha;

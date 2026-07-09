@@ -96,7 +96,7 @@ Tasks initializeTasks(int task_identifier, vector<Items> item_repository)
             task_alpha.setAttributeReward(0);
             break;
         case 3:
-            task_alpha.setDescription("Harvest Crop");
+            task_alpha.setDescription("Harvest Crop (Wheat)");
             task_alpha.setRequiredItem("");
             task_alpha.setTime(2);
             task_alpha.setItemReward(item_repository[1]);
@@ -104,7 +104,7 @@ Tasks initializeTasks(int task_identifier, vector<Items> item_repository)
             task_alpha.setAttributeReward(0);
             break;
         case 4:
-            task_alpha.setDescription("Harvest Crop");
+            task_alpha.setDescription("Harvest Crop (Melon)");
             task_alpha.setRequiredItem("");
             task_alpha.setTime(2);
             task_alpha.setItemReward(item_repository[2]);
@@ -112,7 +112,7 @@ Tasks initializeTasks(int task_identifier, vector<Items> item_repository)
             task_alpha.setAttributeReward(0);
             break;
         case 5:
-            task_alpha.setDescription("Harvest Crop");
+            task_alpha.setDescription("Harvest Crop (Corn)");
             task_alpha.setRequiredItem("");
             task_alpha.setTime(2);
             task_alpha.setItemReward(item_repository[3]);
@@ -122,7 +122,7 @@ Tasks initializeTasks(int task_identifier, vector<Items> item_repository)
         case 6:
             task_alpha.setDescription("Rest");
             task_alpha.setRequiredItem("");
-            task_alpha.setTime(2);
+            task_alpha.setTime(5);
             task_alpha.setItemReward(item_repository[0]);
             task_alpha.setLocationReward("");
             task_alpha.setAttributeReward(10);

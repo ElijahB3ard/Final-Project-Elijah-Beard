@@ -194,5 +194,6 @@ The objective of the game is to fill the Bundle before time runs out. The player
                 (FSP <= 2): "Grrrrrr"
                             "Grrrrrrrrrrr"
                             "*Whine*"
+                            "Hmph"
             - Task - NONE
             - Friendship Points Change - NONE
