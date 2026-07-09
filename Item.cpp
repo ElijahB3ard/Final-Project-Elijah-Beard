@@ -6,11 +6,10 @@ Item::Item()
     name = "Unknown";
     cost = 0;
     type = 0;
-    rarity = 0;
     reward = 0;
     attribute = 0;
 }
-Item::Item(string n, int c, int t, int r, int re, int a)
+Item::Item(string n, int c, int t, int re, int a)
 {
     // Name - n
     if (n == "")
@@ -42,16 +41,6 @@ Item::Item(string n, int c, int t, int r, int re, int a)
         type = t;
     }
 
-    // Rarity - r
-    if ((r > 3) || (r < 0))
-    {
-        rarity = 0;
-    }
-    else
-    {
-        rarity = r;
-    }
-
     // Reward - re
     if (re < 0)
     {
@@ -74,25 +63,7 @@ Item::Item(string n, int c, int t, int r, int re, int a)
 }
 
 // Methods
-string Item::rarityName()
-{
-    if (rarity == 1)
-    {
-        return "common";
-    }
-    else if (rarity == 2)
-    {
-        return "rare";
-    }
-    else if (rarity == 3)
-    {
-        return "precious";
-    }
-    else
-    {
-        return "void";
-    }
-}
+
 string Item::typeName()
 {
     if (type == 1)

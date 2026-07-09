@@ -5,7 +5,7 @@ Equipment::Equipment() : Item()
 {
     equipment_type = 0;
 }
-Equipment::Equipment(string n, int c, int t, int r, int re, int a, int eT) : Item(n, c, t, r, re, a)
+Equipment::Equipment(string n, int c, int t, int re, int a, int eT) : Item(n, c, t, re, a)
 {
     if ((eT > 4) || (eT < 0))
     {

@@ -18,7 +18,7 @@ class Equipment : public Item
     
     public:
         Equipment();
-        Equipment(string n, int c, int t, int r, int re, int a, int eT);
+        Equipment(string n, int c, int t, int re, int a, int eT);
         string equipmentName();
 };
 

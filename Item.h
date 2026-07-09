@@ -32,14 +32,12 @@ class Item
         string name;
         int cost;
         int type;
-        int rarity;
         int reward;
         int attribute;
 
     public:
         Item();
-        Item(string n, int c, int t, int r, int re, int a);
-        string rarityName();
+        Item(string n, int c, int t, int re, int a);
         string typeName();
         string attributeName();
         string getName();
