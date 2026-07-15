@@ -12,5 +12,8 @@ int main()
     vector<NPC> npcs = initializeNPCs(npc_tasks);
     vector<Location> locations = intiializeLocations(tasks, npcs);
 
+    // Main menu is still in progress, I have finished it as pseudocode, however, I have not translated it to actual code yet
+
+
     return 0;
 }
