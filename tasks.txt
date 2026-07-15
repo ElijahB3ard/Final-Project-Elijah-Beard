@@ -1,0 +1,12 @@
+Travel to Liminalis|void|void|void|void|3
+Travel to Sepulcrum|void|void|void|void|3
+Travel to Null|void|void|void|void|3
+Travel to Theatre|void|void|void|void|3
+Travel to Lyceum|void|void|void|void|3
+Travel to Sanatorium|void|void|void|void|3
+Travel to Ossuary|void|void|void|void|3
+Steal medical supplies|void|void|void|Hematic Needle|1
+Perform autopsy|void|Scalpel|Faith|void|12
+Extract blood|void|Hematic Needle|Blood of God|void|12
+Watch play|Actors Promise|void|Codex of Babel|void|24
+Measure impossible room|void|Abacus|Measurement|void|12

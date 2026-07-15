@@ -1,0 +1,50 @@
+Thespian
+Character 1 reputation 0 - Actor - Openning
+Character 1 reputation 1 - Actor - Openning
+Character 1 reputation 2 - Actor - Openning
+Character 2 reputation 0 - Actor - Openning
+Character 2 reputation 1 - Actor - Openning
+Character 2 reputation 2 - Actor - Openning
+Character 3 reputation 0 - Actor - Openning
+Character 3 reputation 1 - Actor - Openning
+Character 3 reputation 2 - Actor - Openning
+God
+Character 1 reputation 0 - God - Openning
+Character 1 reputation 1 - God - Openning
+Character 1 reputation 2 - God - Openning
+Character 2 reputation 0 - God - Openning
+Character 2 reputation 1 - God - Openning
+Character 2 reputation 2 - God - Openning
+Character 3 reputation 0 - God - Openning
+Character 3 reputation 1 - God - Openning
+Character 3 reputation 2 - God - Openning
+Scholar
+Character 1 reputation 0 - Openning - Scholar
+Character 1 reputation 1 - Openning - Scholar
+Character 1 reputation 2 - Openning - Scholar
+Character 2 reputation 0 - Openning - Scholar
+Character 2 reputation 1 - Openning - Scholar
+Character 2 reputation 2 - Openning - Scholar
+Character 3 reputation 0 - Openning - Scholar
+Character 3 reputation 1 - Openning - Scholar
+Character 3 reputation 2 - Openning - Scholar
+Magister
+Character 1 reputation 0 - Openning - Magister
+Character 1 reputation 1 - Openning - Magister
+Character 1 reputation 2 - Openning - Magister
+Character 2 reputation 0 - Openning - Magister
+Character 2 reputation 1 - Openning - Magister
+Character 2 reputation 2 - Openning - Magister
+Character 3 reputation 0 - Openning - Magister
+Character 3 reputation 1 - Openning - Magister
+Character 3 reputation 2 - Openning - Magister
+Template
+Character 1 reputation 0 - Openning
+Character 1 reputation 1 - Openning
+Character 1 reputation 2 - Openning
+Character 2 reputation 0 - Openning
+Character 2 reputation 1 - Openning
+Character 2 reputation 2 - Openning
+Character 3 reputation 0 - Openning
+Character 3 reputation 1 - Openning
+Character 3 reputation 2 - Openning

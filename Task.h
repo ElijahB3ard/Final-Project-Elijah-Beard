@@ -9,25 +9,31 @@ using namespace std;
 Status:
 0 - not started
 1 - started
-2 - completed
+2 - has item
+3 - completed
 */
 class Task
 {
     private:
         string description;
         Item required_item;
+        Equipment required_equipment;
         Item reward;
+        Equipment equipment_reward;
         int status;
+        int time;
 
     public:
+        // Constructors
         Task();
-        Task(string d, Item rI, Item i, int s);
-        void setStatus(int s);
+        Task(string d, Item rI, Equipment rE, Item i, Equipment eR, int s, int t);
+        // Methods
+        bool nextStatus();
+        // Getters
         string getDescription();
-        Item completed(Item i);
         Item getRequiredItem();
-        string statusName();
-
+        Equipment getRequiredEquipment();
+        int getStatus();
 };
 
 #endif

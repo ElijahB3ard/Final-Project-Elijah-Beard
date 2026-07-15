@@ -1,0 +1,9 @@
+Actors Promise|0|0|0|0
+Measurement|0|0|0|0
+Faith|1000|1|0|0
+Codex of Babel|1000|1|0|0
+The Veil|2000|1|0|0
+Blood of God|3000|1|0|0
+Veins of Creation|4000|1|0|0
+Flower|1|0|0|0
+Wings|100|0|0|0

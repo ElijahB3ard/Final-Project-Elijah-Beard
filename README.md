@@ -22,6 +22,7 @@ Inherited from the Item class, however, each bit of equipment needs a designator
 Each task in the game has a description, telling you what you need to do, and a reward that you recieve for when you complete the task. The task has a required item that must be aquired in order for the reward to be given, and the task has to be started before a reward can be given or an item accepted.
 ### NPCTask
 Inherited from the Task class, however with an extra friendship change variable. Depending on the task i.e. its contents or who you do it with, your friendship points can go down or up. I will be changing friendship points to reputation later on, and thinking of that variable as a reputation is much easier then as a freindship point.
+## Player
 
 ## Extra credit
 I will try my best to make the game look pretty!!!!

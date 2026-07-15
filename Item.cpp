@@ -1,130 +1,119 @@
 #include "Item.h"
 
 // Constructors
-Item::Item()
-{
-    name = "Unknown";
-    cost = 0;
-    type = 0;
-    reward = 0;
-    attribute = 0;
-}
-Item::Item(string n, int c, int t, int re, int a)
-{
-    // Name - n
-    if (n == "")
+    // Default Constructor
+    Item::Item()
     {
+        // Set all variables to 0 or void, and "Unknown" for easy identification of an error
         name = "Unknown";
-    }
-    else
-    {
-        name = n;
-    }
-
-    // Cost - c
-    if (c < 0)
-    {
         cost = 0;
-    }
-    else
-    {
-        cost = c;
-    }
-
-    // Type - t
-    if ((t > 4) || (t < 0))
-    {
         type = 0;
-    }
-    else
-    {
-        type = t;
-    }
-
-    // Reward - re
-    if (re < 0)
-    {
         reward = 0;
-    }
-    else
-    {
-        reward = re;
-    }
-
-    // Attribute - a
-    if ((a > 4) || (a < 0))
-    {
         attribute = 0;
     }
-    else
+    // Parameterized Constructor
+    Item::Item(string n, int c, int t, int re, int a)
     {
-        attribute = a;
+        // Set name:
+        if (n == "")
+        {
+            // If invalid input
+            name = "Unknown";
+        }
+        else
+        {
+            // valid input
+            name = n;
+        }
+
+        // Set cost:
+        if (c < 0)
+        {
+            // Invalid input
+            cost = 0;
+        }
+        else
+        {
+            // Valid input
+            cost = c;
+        }
+
+        // Set type:
+        if ((t > 4) || (t < 0))
+        {
+            // Invalid type
+            type = 0;
+        }
+        else
+        {
+            // Valid type
+            type = t;
+        }
+
+        // Set reward:
+        if (re < 0)
+        {
+            // Invalid reward
+            reward = 0;
+        }
+        else
+        {
+            // Valid reward
+            reward = re;
+        }
+
+        // Set attribute:
+        if ((a > 4) || (a < 0))
+        {
+            // Invalid attribute
+            attribute = 0;
+        }
+        else
+        {
+            // Valid attribute
+            attribute = a;
+        }
     }
-}
 
 // Methods
-
-string Item::typeName()
-{
-    if (type == 1)
+    // Return the formal name of the items 'type'
+    string Item::typeName()
     {
-        return "consumable";
+        // First type: Vaccine
+        if (type == 1)
+        {
+            return "vaccine";
+        }
+        // Second type: Equipment
+        else if (type == 2)
+        {
+            return "equipment";
+        }
+        // Zero type: Void
+        else
+        {
+            return "void";
+        }
     }
-    else if (type == 2)
+    // Return the formal name of the items 'attribute'
+    string Item::attributeName()
     {
-        return "seed";
+        return "Unconstructed function";
     }
-    else if (type == 3)
-    {
-        return "material";
-    }
-    else if (type == 4)
-    {
-        return "equipment";
-    }
-    else
-    {
-        return "void";
-    }
-}
-string Item::attributeName()
-{
-    if (attribute == 1)
-    {
-        return "energy";
-    }
-    else if (attribute == 2)
-    {
-        return "money";
-    }
-    else if (attribute == 3)
-    {
-        return "joja influence";
-    }
-    else if (attribute == 4)
-    {
-        return "map";
-    }
-    else if (attribute == 5)
-    {
-        return "score";
-    }
-    else
-    {
-        return "void";
-    }
-}
 
 // Getters
-string Item::getName()
-{
-    return name;
-}
-int Item::getCost()
-{
-    return cost;
-}
-int Item::getReward()
-{
-    return reward;
-}
+    // Return item name
+    string Item::getName()
+    {
+        return name;
+    }
+    // Return the cost of the item
+    int Item::getCost()
+    {
+        return cost;
+    }
+    // Return the value of the reward from using the item
+    int Item::getReward()
+    {
+        return reward;
+    }

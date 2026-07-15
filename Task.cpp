@@ -1,77 +1,99 @@
 #include "Task.h"
 
-Task::Task()
-{
-    description = "void";
-    required_item = Item();
-    reward = Item();
-    status = 0;
-}
-
-Task::Task(string d, Item rI, Item i, int s)
-{
-    if (d == "")
+// Constructors
+    // Default constructor
+    Task::Task()
     {
-        description == "Unknown";
-    }
-    else
-    {
-        description = d;
-    }
-
-    required_item = i;
-    reward = i;
-    
-    if ((s > 2) || (s < 0))
-    {
+        // Give default values
+        description = "void";
+        required_item = Item();
+        reward = Item();
+        equipment_reward = Equipment();
         status = 0;
+        time = 0;
     }
-    else
+    // Parameterized constructor
+    Task::Task(string d, Item rI, Equipment rE, Item i, Equipment eR, int s, int t)
     {
-        status = s;
-    }
-}
+        // Set description
+        if (d == "")
+        {
+            // Invalid description
+            description = "Unknown";
+        }
+        else
+        {
+            // Valid description
+            description = d;
+        }
 
-void Task::setStatus(int s)
-{
-    status = s;
-}
+        // Default variables - unidentifiable
+        required_item = rI;
+        required_equipment = rE;
+        reward = i;
+        equipment_reward = eR;
+        
+        // Set status
+        if ((s > 3) || (s < 0))
+        {
+            // Invalid status
+            status = 0;
+        }
+        else
+        {
+            // Valid status
+            status = s;
+        }
 
-string Task::getDescription()
-{
-    return description;
-}
+        // Set time
+        if ((t > 24) || (t < 0))
+        {
+            // Invalid time
+            time = 0;
+        }
+        else
+        {
+            // Valid time
+            time = t;
+        }
+    }
 
-Item Task::getRequiredItem()
-{
-    return required_item;
-}
+// Methods
+    // Increase the status
+    bool Task::nextStatus()
+    {
+        // Increment status
+        status++;
 
-Item Task::completed(Item i)
-{
-    if ((status == 1) && (i.getName() == required_item.getName()))
-    {
-        status = 2;
-        return reward;
-    }
-    else
-    {
-        return Item();
-    }
-}
+        // If new status is invalid, return false
+        if ((status > 3) || (status < 0))
+        {
+            // Return statement
+            return false;
+        }
 
-string Task::statusName()
-{
-    if (status == 1)
-    {
-        return "started";
+        // Return statement
+        return true;
     }
-    else if (status == 2)
+
+// Getters
+    // Return task description
+    string Task::getDescription()
     {
-        return "complete";
+        return description;
     }
-    else
+    // Return required item
+    Item Task::getRequiredItem()
     {
-        return "not started";
+        return required_item;
     }
-}
+    // Return required equipment
+    Equipment Task::getRequiredEquipment()
+    {
+        return required_equipment;
+    }
+    // Return which stage in the task the player is at
+    int Task::getStatus()
+    {
+        return status;
+    }

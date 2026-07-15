@@ -1,17 +1,20 @@
 #include "NpcTask.h"
 
-NPCTask::NPCTask() : Task()
-{
-    friendship_change = 0;
-}
+// Constructors
+    // Default constructor
+    NPCTask::NPCTask() : Task()
+    {
+        friendship_change = 0;
+    }
+    // Parameterized constructor
+    NPCTask::NPCTask(string d, Item rI, Equipment rE, Item i, Equipment e, int s, int t, int fC) : Task(d, rI, rE, i, e, s, t)
+    {
+        friendship_change = fC;
+    }
 
-NPCTask::NPCTask(string d, Item rI, Item i, int s, int fC) : Task(d, rI, i, s)
-{
-    friendship_change = fC;
-}
-
-int NPCTask::getFriendshipChange()
-{
-    return friendship_change;
-}
-
+// Getters
+    // Returns the change in reputation from completing a task
+    int NPCTask::getFriendshipChange()
+    {
+        return friendship_change;
+    }

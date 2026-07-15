@@ -1,0 +1,42 @@
+Lyceum|name
+1|unlock
+Travel to Null|task
+Measure impossible room|task
+Scholar|npc
+Magister|npc
+void----------------------------------------------|void
+Null|name
+1|unlock
+Travel to Liminalis|task
+Travel to Theatre|task
+Travel to Lyceum|task
+Travel to Sanatorium|task
+Thespian|npc
+void----------------------------------------------|void
+Sepulcrum|name
+1|unlock
+Travel to Liminalis|task
+void----------------------------------------------|void
+Sanatorium|name
+1|unlock
+Travel to Null|task
+Travel to Ossuary|task
+Steal medical supplies|task
+Perform autopsy|task
+void----------------------------------------------|void
+Liminalis|name
+1|unlock
+Travel to Sepulcrum|task
+Travel to Null|task
+Extract blood|task
+void----------------------------------------------|void
+Theatre|name
+1|unlock
+Travel to Null|task
+Watch play|task
+void----------------------------------------------|void
+Ossuary|name
+1|unlock
+Travel to Sanatorium|task
+God|npc
+void----------------------------------------------|void

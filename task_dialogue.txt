@@ -1,0 +1,140 @@
+God
+character 0 - reputation - 0 - status - 0 - God
+character 0 - reputation - 0 - status - 1 - God
+character 0 - reputation - 0 - status - 2 - God
+character 0 - reputation - 1 - status - 0 - God
+character 0 - reputation - 1 - status - 1 - God
+character 0 - reputation - 1 - status - 2 - God
+character 0 - reputation - 2 - status - 0 - God
+character 0 - reputation - 2 - status - 1 - God
+character 0 - reputation - 2 - status - 2 - God
+character 1 - reputation - 0 - status - 0 - God
+character 1 - reputation - 0 - status - 1 - God
+character 1 - reputation - 0 - status - 2 - God
+character 1 - reputation - 1 - status - 0 - God
+character 1 - reputation - 1 - status - 1 - God
+character 1 - reputation - 1 - status - 2 - God
+character 1 - reputation - 2 - status - 0 - God
+character 1 - reputation - 2 - status - 1 - God
+character 1 - reputation - 2 - status - 2 - God
+character 2 - reputation - 0 - status - 0 - God
+character 2 - reputation - 0 - status - 1 - God
+character 2 - reputation - 0 - status - 2 - God
+character 2 - reputation - 1 - status - 0 - God
+character 2 - reputation - 1 - status - 1 - God
+character 2 - reputation - 1 - status - 2 - God
+character 2 - reputation - 2 - status - 0 - God
+character 2 - reputation - 2 - status - 1 - God
+character 2 - reputation - 2 - status - 2 - God
+Thespian
+character 0 - reputation - 0 - status - 0 - Actor
+character 0 - reputation - 0 - status - 1 - Actor
+character 0 - reputation - 0 - status - 2 - Actor
+character 0 - reputation - 1 - status - 0 - Actor
+character 0 - reputation - 1 - status - 1 - Actor
+character 0 - reputation - 1 - status - 2 - Actor
+character 0 - reputation - 2 - status - 0 - Actor
+character 0 - reputation - 2 - status - 1 - Actor
+character 0 - reputation - 2 - status - 2 - Actor
+character 1 - reputation - 0 - status - 0 - Actor
+character 1 - reputation - 0 - status - 1 - Actor
+character 1 - reputation - 0 - status - 2 - Actor
+character 1 - reputation - 1 - status - 0 - Actor
+character 1 - reputation - 1 - status - 1 - Actor
+character 1 - reputation - 1 - status - 2 - Actor
+character 1 - reputation - 2 - status - 0 - Actor
+character 1 - reputation - 2 - status - 1 - Actor
+character 1 - reputation - 2 - status - 2 - Actor
+character 2 - reputation - 0 - status - 0 - Actor
+character 2 - reputation - 0 - status - 1 - Actor
+character 2 - reputation - 0 - status - 2 - Actor
+character 2 - reputation - 1 - status - 0 - Actor
+character 2 - reputation - 1 - status - 1 - Actor
+character 2 - reputation - 1 - status - 2 - Actor
+character 2 - reputation - 2 - status - 0 - Actor
+character 2 - reputation - 2 - status - 1 - Actor
+character 2 - reputation - 2 - status - 2 - Actor
+Template
+character 0 - reputation - 0 - status - 0 - 
+character 0 - reputation - 0 - status - 1 - 
+character 0 - reputation - 0 - status - 2 - 
+character 0 - reputation - 1 - status - 0 - 
+character 0 - reputation - 1 - status - 1 - 
+character 0 - reputation - 1 - status - 2 - 
+character 0 - reputation - 2 - status - 0 - 
+character 0 - reputation - 2 - status - 1 - 
+character 0 - reputation - 2 - status - 2 - 
+character 1 - reputation - 0 - status - 0 - 
+character 1 - reputation - 0 - status - 1 - 
+character 1 - reputation - 0 - status - 2 - 
+character 1 - reputation - 1 - status - 0 - 
+character 1 - reputation - 1 - status - 1 - 
+character 1 - reputation - 1 - status - 2 - 
+character 1 - reputation - 2 - status - 0 - 
+character 1 - reputation - 2 - status - 1 - 
+character 1 - reputation - 2 - status - 2 - 
+character 2 - reputation - 0 - status - 0 - 
+character 2 - reputation - 0 - status - 1 - 
+character 2 - reputation - 0 - status - 2 - 
+character 2 - reputation - 1 - status - 0 - 
+character 2 - reputation - 1 - status - 1 - 
+character 2 - reputation - 1 - status - 2 - 
+character 2 - reputation - 2 - status - 0 - 
+character 2 - reputation - 2 - status - 1 - 
+character 2 - reputation - 2 - status - 2 - 
+Magister
+character 0 - reputation - 0 - status - 0 - Magister
+character 0 - reputation - 0 - status - 1 - Magister
+character 0 - reputation - 0 - status - 2 - Magister
+character 0 - reputation - 1 - status - 0 - Magister
+character 0 - reputation - 1 - status - 1 - Magister
+character 0 - reputation - 1 - status - 2 - Magister
+character 0 - reputation - 2 - status - 0 - Magister
+character 0 - reputation - 2 - status - 1 - Magister
+character 0 - reputation - 2 - status - 2 - Magister
+character 1 - reputation - 0 - status - 0 - Magister
+character 1 - reputation - 0 - status - 1 - Magister
+character 1 - reputation - 0 - status - 2 - Magister
+character 1 - reputation - 1 - status - 0 - Magister
+character 1 - reputation - 1 - status - 1 - Magister
+character 1 - reputation - 1 - status - 2 - Magister
+character 1 - reputation - 2 - status - 0 - Magister
+character 1 - reputation - 2 - status - 1 - Magister
+character 1 - reputation - 2 - status - 2 - Magister
+character 2 - reputation - 0 - status - 0 - Magister
+character 2 - reputation - 0 - status - 1 - Magister
+character 2 - reputation - 0 - status - 2 - Magister
+character 2 - reputation - 1 - status - 0 - Magister
+character 2 - reputation - 1 - status - 1 - Magister
+character 2 - reputation - 1 - status - 2 - Magister
+character 2 - reputation - 2 - status - 0 - Magister
+character 2 - reputation - 2 - status - 1 - Magister
+character 2 - reputation - 2 - status - 2 - Magister
+Scholar
+character 0 - reputation - 0 - status - 0 - Scholar
+character 0 - reputation - 0 - status - 1 - Scholar
+character 0 - reputation - 0 - status - 2 - Scholar
+character 0 - reputation - 1 - status - 0 - Scholar
+character 0 - reputation - 1 - status - 1 - Scholar
+character 0 - reputation - 1 - status - 2 - Scholar
+character 0 - reputation - 2 - status - 0 - Scholar
+character 0 - reputation - 2 - status - 1 - Scholar
+character 0 - reputation - 2 - status - 2 - Scholar
+character 1 - reputation - 0 - status - 0 - Scholar
+character 1 - reputation - 0 - status - 1 - Scholar
+character 1 - reputation - 0 - status - 2 - Scholar
+character 1 - reputation - 1 - status - 0 - Scholar
+character 1 - reputation - 1 - status - 1 - Scholar
+character 1 - reputation - 1 - status - 2 - Scholar
+character 1 - reputation - 2 - status - 0 - Scholar
+character 1 - reputation - 2 - status - 1 - Scholar
+character 1 - reputation - 2 - status - 2 - Scholar
+character 2 - reputation - 0 - status - 0 - Scholar
+character 2 - reputation - 0 - status - 1 - Scholar
+character 2 - reputation - 0 - status - 2 - Scholar
+character 2 - reputation - 1 - status - 0 - Scholar
+character 2 - reputation - 1 - status - 1 - Scholar
+character 2 - reputation - 1 - status - 2 - Scholar
+character 2 - reputation - 2 - status - 0 - Scholar
+character 2 - reputation - 2 - status - 1 - Scholar
+character 2 - reputation - 2 - status - 2 - Scholar
