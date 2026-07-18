@@ -7,3 +7,4 @@ Blood of God|3000|1|0|0
 Veins of Creation|4000|1|0|0
 Flower|1|0|0|0
 Wings|100|0|0|0
+Hate|0|0|0|0

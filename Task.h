@@ -8,9 +8,8 @@ using namespace std;
 /*
 Status:
 0 - not started
-1 - started
+1 - started - no item
 2 - has item
-3 - completed
 */
 class Task
 {
@@ -22,18 +21,25 @@ class Task
         Equipment equipment_reward;
         int status;
         int time;
+        int exhaustion;
 
     public:
         // Constructors
         Task();
-        Task(string d, Item rI, Equipment rE, Item i, Equipment eR, int s, int t);
+        Task(string d, Item rI, Equipment rE, Item i, Equipment eR, int s, int t, int e);
         // Methods
-        bool nextStatus();
+        void nextStatus();
+        void setStatus(int s);
         // Getters
         string getDescription();
         Item getRequiredItem();
         Equipment getRequiredEquipment();
         int getStatus();
+
+        Item getItemReward();
+        Equipment getEquipmentReward();
+        int getTime();
+        int getExhaustion();
 };
 
 #endif

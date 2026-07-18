@@ -1,0 +1,40 @@
+Scholar
+...
+...
+...
+character 1 - choice - 0 - Scholar - R1
+character 1 - choice - 1 - Scholar - R1
+character 1 - choice - 2 - Scholar - R1
+character 2 - choice - 0 - Scholar - R2
+character 2 - choice - 1 - Scholar - R2
+character 2 - choice - 2 - Scholar - R2
+Magister
+...
+...
+...
+character 1 - choice - 0 - Magister - R1
+character 1 - choice - 1 - Magister - R1
+character 1 - choice - 2 - Magister - R1
+character 2 - choice - 0 - Magister - R2
+character 2 - choice - 1 - Magister - R2
+character 2 - choice - 2 - Magister - R2
+Thespian
+...
+...
+...
+character 1 - choice - 0 - Thespian - R1
+character 1 - choice - 1 - Thespian - R1
+character 1 - choice - 2 - Thespian - R1
+character 2 - choice - 0 - Thespian - R2
+character 2 - choice - 1 - Thespian - R2
+character 2 - choice - 2 - Thespian - R2
+God
+...
+...
+...
+character 1 - choice - 0 - God - R1
+character 1 - choice - 1 - God - R1
+character 1 - choice - 2 - God - R1
+character 2 - choice - 0 - God - R2
+character 2 - choice - 1 - God - R2
+character 2 - choice - 2 - God - R2

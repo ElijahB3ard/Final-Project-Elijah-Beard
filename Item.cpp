@@ -5,7 +5,7 @@
     Item::Item()
     {
         // Set all variables to 0 or void, and "Unknown" for easy identification of an error
-        name = "Unknown";
+        name = "void";
         cost = 0;
         type = 0;
         reward = 0;
@@ -18,7 +18,7 @@
         if (n == "")
         {
             // If invalid input
-            name = "Unknown";
+            name = "void";
         }
         else
         {
@@ -63,7 +63,7 @@
         }
 
         // Set attribute:
-        if ((a > 4) || (a < 0))
+        if ((a > 6) || (a < 0))
         {
             // Invalid attribute
             attribute = 0;

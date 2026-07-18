@@ -1,0 +1,3 @@
+Haruspex|75|5|3
+Hierophant|100|8|0
+Spagyrist|50|3|7

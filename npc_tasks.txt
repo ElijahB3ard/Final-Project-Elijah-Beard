@@ -1,4 +1,4 @@
-Bargain for Abacus|Flower|void|void|Abacus|1|1
-Tell me the measurement|Measurement|void|The Veil|void|1|1
-Convince to act|Wings|void|Actors Promise|void|2|0
-Give yourself|void|void|Veins of Creation|void|24|0
+Bargain for Abacus|Flower|void|void|Abacus|1|1|1
+Tell me the measurement|Measurement|void|The Veil|void|1|1|1
+Convince to act|Wings|void|Actors Promise|void|2|3|0
+Give yourself|Hate|void|Veins of Creation|void|24|3|0

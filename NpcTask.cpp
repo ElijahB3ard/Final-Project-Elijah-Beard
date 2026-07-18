@@ -7,7 +7,7 @@
         friendship_change = 0;
     }
     // Parameterized constructor
-    NPCTask::NPCTask(string d, Item rI, Equipment rE, Item i, Equipment e, int s, int t, int fC) : Task(d, rI, rE, i, e, s, t)
+    NPCTask::NPCTask(string d, Item rI, Equipment rE, Item i, Equipment e, int s, int t, int ex, int fC) : Task(d, rI, rE, i, e, s, t, ex)
     {
         friendship_change = fC;
     }

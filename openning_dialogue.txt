@@ -1,7 +1,7 @@
 Thespian
-Character 1 reputation 0 - Actor - Openning
-Character 1 reputation 1 - Actor - Openning
-Character 1 reputation 2 - Actor - Openning
+You look unfit for the stage.
+What do you want?
+Ah, a fellow member of the thatrical arts!
 Character 2 reputation 0 - Actor - Openning
 Character 2 reputation 1 - Actor - Openning
 Character 2 reputation 2 - Actor - Openning
@@ -9,9 +9,9 @@ Character 3 reputation 0 - Actor - Openning
 Character 3 reputation 1 - Actor - Openning
 Character 3 reputation 2 - Actor - Openning
 God
-Character 1 reputation 0 - God - Openning
-Character 1 reputation 1 - God - Openning
-Character 1 reputation 2 - God - Openning
+What of your wings.
+You must cease to understand.
+Your faith falls on the relics of the universe.
 Character 2 reputation 0 - God - Openning
 Character 2 reputation 1 - God - Openning
 Character 2 reputation 2 - God - Openning
@@ -19,9 +19,9 @@ Character 3 reputation 0 - God - Openning
 Character 3 reputation 1 - God - Openning
 Character 3 reputation 2 - God - Openning
 Scholar
-Character 1 reputation 0 - Openning - Scholar
-Character 1 reputation 1 - Openning - Scholar
-Character 1 reputation 2 - Openning - Scholar
+Get out of here. Scholars only.
+What are you looking at me for?
+Might I suggest a book?
 Character 2 reputation 0 - Openning - Scholar
 Character 2 reputation 1 - Openning - Scholar
 Character 2 reputation 2 - Openning - Scholar
@@ -29,22 +29,12 @@ Character 3 reputation 0 - Openning - Scholar
 Character 3 reputation 1 - Openning - Scholar
 Character 3 reputation 2 - Openning - Scholar
 Magister
-Character 1 reputation 0 - Openning - Magister
-Character 1 reputation 1 - Openning - Magister
-Character 1 reputation 2 - Openning - Magister
+What of your brain?
+You must not try to understand.
+A pupil of mine I see.
 Character 2 reputation 0 - Openning - Magister
 Character 2 reputation 1 - Openning - Magister
 Character 2 reputation 2 - Openning - Magister
 Character 3 reputation 0 - Openning - Magister
 Character 3 reputation 1 - Openning - Magister
 Character 3 reputation 2 - Openning - Magister
-Template
-Character 1 reputation 0 - Openning
-Character 1 reputation 1 - Openning
-Character 1 reputation 2 - Openning
-Character 2 reputation 0 - Openning
-Character 2 reputation 1 - Openning
-Character 2 reputation 2 - Openning
-Character 3 reputation 0 - Openning
-Character 3 reputation 1 - Openning
-Character 3 reputation 2 - Openning

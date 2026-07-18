@@ -4,6 +4,7 @@ Travel to Null|task
 Measure impossible room|task
 Scholar|npc
 Magister|npc
+Read|task
 void----------------------------------------------|void
 Null|name
 1|unlock
@@ -12,6 +13,9 @@ Travel to Theatre|task
 Travel to Lyceum|task
 Travel to Sanatorium|task
 Thespian|npc
+Pick flower|task
+Add to vaccine|task
+Stop by the black market|task
 void----------------------------------------------|void
 Sepulcrum|name
 1|unlock
@@ -29,6 +33,7 @@ Liminalis|name
 Travel to Sepulcrum|task
 Travel to Null|task
 Extract blood|task
+Rest|task
 void----------------------------------------------|void
 Theatre|name
 1|unlock
@@ -39,4 +44,5 @@ Ossuary|name
 1|unlock
 Travel to Sanatorium|task
 God|npc
+Pray|task
 void----------------------------------------------|void

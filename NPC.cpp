@@ -105,3 +105,20 @@
     {
         return task;
     }
+
+    void NPC::setTask(NPCTask t)
+    {
+        task = t;
+    }
+
+
+
+    void NPC::setDialogueStatus(int i)
+    {
+        dialogue_status = i;
+    }
+
+    int NPC::getDialogueStatus()
+    {
+        return dialogue_status;
+    }

@@ -39,6 +39,9 @@ class NPC
         // Getters
         string getName();
         NPCTask getTask();
+        int getDialogueStatus();
+        void setTask(NPCTask t);
+        void setDialogueStatus(int i);
 };
 
 #endif

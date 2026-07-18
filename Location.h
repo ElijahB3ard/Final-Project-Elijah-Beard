@@ -1,6 +1,5 @@
 #ifndef LOCATION_H
 #define LOCATION_H
-#include "Task.h"
 #include "NPC.h"
 
 /*
@@ -25,8 +24,10 @@ class Location
         string getName();
         vector<Task> getTasks();
         vector<NPC> getNPCs();
+        bool getUnlock();
         // Method
         void unlock();
+        void setNPC(int i, NPC n);
 };
 
 #endif

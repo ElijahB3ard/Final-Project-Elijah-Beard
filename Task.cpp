@@ -13,7 +13,7 @@
         time = 0;
     }
     // Parameterized constructor
-    Task::Task(string d, Item rI, Equipment rE, Item i, Equipment eR, int s, int t)
+    Task::Task(string d, Item rI, Equipment rE, Item i, Equipment eR, int s, int t, int e)
     {
         // Set description
         if (d == "")
@@ -56,24 +56,29 @@
             // Valid time
             time = t;
         }
+
+        // Set exhaustion
+        if ((e > 20) || (e < 0))
+        {
+            // Invalid value
+            exhaustion = 0;
+        }
+        else
+        {
+            exhaustion = e;
+        }
     }
 
 // Methods
     // Increase the status
-    bool Task::nextStatus()
+    void Task::nextStatus()
     {
         // Increment status
         status++;
-
-        // If new status is invalid, return false
-        if ((status > 3) || (status < 0))
-        {
-            // Return statement
-            return false;
-        }
-
-        // Return statement
-        return true;
+    }
+    void Task::setStatus(int s)
+    {
+        status = s;
     }
 
 // Getters
@@ -97,3 +102,21 @@
     {
         return status;
     }
+
+// Debug
+Item Task::getItemReward()
+{
+    return reward;
+}
+Equipment Task::getEquipmentReward()
+{
+    return equipment_reward;
+}
+int Task::getTime()
+{
+    return time;
+}
+int Task::getExhaustion()
+{
+    return exhaustion;
+}

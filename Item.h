@@ -18,6 +18,11 @@ Types:
 
 Attribute: 
 0 - void
+1 - money
+2 - exhaustion
+3 - score
+4 - reputation
+5 - influence
 */
 
 class Item

@@ -1,7 +1,7 @@
 Thespian
-Character 0 - Reputation 0 - Actor - Completed
-Character 0 - Reputation 1 - Actor - Completed
-Character 0 - Reputation 2 - Actor - Completed
+Thank you
+Thank you
+Thank you
 Character 1 - Reputation 0 - Actor - Completed
 Character 1 - Reputation 1 - Actor - Completed
 Character 1 - Reputation 2 - Actor - Completed
@@ -9,29 +9,19 @@ Character 2 - Reputation 0 - Actor - Completed
 Character 2 - Reputation 1 - Actor - Completed
 Character 2 - Reputation 2 - Actor - Completed
 God
-Character 0 - Reputation 0 - Actor - Completed
-Character 0 - Reputation 1 - Actor - Completed
-Character 0 - Reputation 2 - Actor - Completed
+Thank you
+Thank you
+Thank you
 Character 1 - Reputation 0 - Actor - Completed
 Character 1 - Reputation 1 - Actor - Completed
 Character 1 - Reputation 2 - Actor - Completed
 Character 2 - Reputation 0 - Actor - Completed
 Character 2 - Reputation 1 - Actor - Completed
 Character 2 - Reputation 2 - Actor - Completed
-Template
-Character 0 - Reputation 0 - Completed
-Character 0 - Reputation 1 - Completed
-Character 0 - Reputation 2 - Completed
-Character 1 - Reputation 0 - Completed
-Character 1 - Reputation 1 - Completed
-Character 1 - Reputation 2 - Completed
-Character 2 - Reputation 0 - Completed
-Character 2 - Reputation 1 - Completed
-Character 2 - Reputation 2 - Completed
 Magister
-Character 0 - Reputation 0 - Completed - Magister
-Character 0 - Reputation 1 - Completed - Magister
-Character 0 - Reputation 2 - Completed - Magister
+Thank you
+Thank you
+Thank you
 Character 1 - Reputation 0 - Completed - Magister
 Character 1 - Reputation 1 - Completed - Magister
 Character 1 - Reputation 2 - Completed - Magister
@@ -39,9 +29,9 @@ Character 2 - Reputation 0 - Completed - Magister
 Character 2 - Reputation 1 - Completed - Magister
 Character 2 - Reputation 2 - Completed - Magister
 Scholar
-Character 0 - Reputation 0 - Completed - Scholar
-Character 0 - Reputation 1 - Completed - Scholar
-Character 0 - Reputation 2 - Completed - Scholar
+Thank you
+Thank you
+Thank you
 Character 1 - Reputation 0 - Completed - Scholar
 Character 1 - Reputation 1 - Completed - Scholar
 Character 1 - Reputation 2 - Completed - Scholar

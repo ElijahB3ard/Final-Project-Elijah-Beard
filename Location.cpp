@@ -13,6 +13,9 @@
     // Parameterized constructor
     Location::Location(string n, vector<Task> t, vector<NPC> npc, bool iU)
     {
+        vector<Task> new_task_vector;
+        vector<NPC> new_npc_vector;
+
         // Set name:
         if (n == "")
         {
@@ -29,25 +32,28 @@
         if (static_cast<int>(t.size()) == 0)
         {
             // Invalid task vector
-            tasks.push_back(Task());
+            new_task_vector.push_back(Task());
         }
         else
         {
             // Valid task vector
-            tasks = t;
+            new_task_vector = t;
         }
-        
+        tasks = new_task_vector;
+
         // Set npcs:
         if (static_cast<int>(npc.size()) == 0)
         {
             // Invalid npc vector
-            npcs.push_back(NPC());
+            new_npc_vector.push_back(NPC());
         }
         else
         {
             // Valid npc vector
-            npcs = npc;
+            new_npc_vector = npc;
         }
+        npcs = new_npc_vector;
+
 
         // Set locking condition:
         is_unlocked = iU;
@@ -70,9 +76,19 @@
         return npcs;
     }
 
+    bool Location::getUnlock()
+    {
+        return is_unlocked;
+    }
+
 // Methods
     // Unlock the location
     void Location::unlock()
     {
         is_unlocked = true;
+    }
+    
+    void Location::setNPC(int i, NPC n)
+    {
+        npcs[i] = n;
     }

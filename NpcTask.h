@@ -10,7 +10,7 @@ class NPCTask : public Task
     public:
         // Constructors
         NPCTask();
-        NPCTask(string d, Item rI, Equipment rE, Item i, Equipment e, int s, int t, int fC);
+        NPCTask(string d, Item rI, Equipment rE, Item i, Equipment e, int s, int t, int ex, int fC);
         // Getters
         int getFriendshipChange();
 };  
